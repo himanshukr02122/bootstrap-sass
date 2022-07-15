@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/assets/styles/sass/main.scss src/assets/styles/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshukr02122/bootstrap-sass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshukr02122/bootstrap-sass/issues"
+  },
+  "homepage": "https://github.com/himanshukr02122/bootstrap-sass#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
