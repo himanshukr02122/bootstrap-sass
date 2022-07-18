@@ -1,4 +1,177 @@
+html, body {
+  margin: 0; }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none; }
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+
 h1 {
-  color: red;
-  padding: 12px;
-  background-color: aqua; }
+  color: antiquewhite;
+  cursor: pointer; }
+
+p {
+  background: #000;
+  color: #fff;
+  padding: 4px; }
+
+.to-header-search-input-box, .select-car {
+  outline: none; }
+
+.to-header-search-input-box {
+  border: none;
+  font-size: medium;
+  width: 20rem; }
+
+.to-header-list-item-title {
+  color: #6d6b6b !important;
+  font-weight: 500; }
+
+.select-car {
+  width: 250px;
+  padding: 4px;
+  margin: 0 2rem 0 0; }
+
+option {
+  background: rgba(0, 0, 0, 0.877); }
+
+.to-navbar-list-block-ul .to-navbar-list-block__item .to-navbar-list-block__item-link {
+  border-right: 1px solid gray;
+  padding: 0 8px;
+  color: #C4CBD0; }
+
+.to-navbar-list-block-ul .to-navbar-list-block__item .to-navbar-list-block__item-link:hover {
+  color: #6d6b6b; }
+
+.to-main-section {
+  position: relative;
+  background: #000 url("../../images/car.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-bottom: 12rem; }
+
+.to-main-sec-block {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 40rem;
+  border: 1px solid #3f3e3e;
+  margin: auto;
+  top: 40px;
+  padding: 20px; }
+  .to-main-sec-block .to-main-sec-block__skip {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #6d6b6b;
+    background-color: transparent;
+    outline: none;
+    border: none; }
+  .to-main-sec-block .to-main__h2 {
+    position: relative;
+    margin: 4rem auto 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: #C4CBD0; }
+    .to-main-sec-block .to-main__h2 .to-main__h2-dot {
+      background-color: red;
+      padding: 3px;
+      margin: 4px;
+      bottom: 4px; }
+  .to-main-sec-block .to-main-sec-form {
+    margin: 0.2rem 1.5rem; }
+    .to-main-sec-block .to-main-sec-form .to-main-sec-form__input {
+      width: 100%;
+      border: none;
+      outline: none;
+      color: #C4CBD0;
+      font-size: medium;
+      background-color: transparent;
+      padding: 0.5rem 0;
+      margin-bottom: 1.2rem; }
+    .to-main-sec-block .to-main-sec-form .to-main-sec-form__input::placeholder {
+      color: #3f3e3e; }
+    .to-main-sec-block .to-main-sec-form .to-main-sec-form__Forgot-Pwd {
+      color: #C4CBD0;
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem 0;
+      margin-bottom: 1.5rem;
+      font-weight: 500; }
+    .to-main-sec-block .to-main-sec-form .to-main-sec-form__button {
+      padding: 0.4rem 7.2rem;
+      background-color: rgba(255, 0, 0, 0.8);
+      border: none;
+      outline: none;
+      color: #C4CBD0;
+      font-size: x-large; }
+    .to-main-sec-block .to-main-sec-form .to-main-sec-form__signup {
+      margin-top: 1rem;
+      color: #6d6b6b; }
+      .to-main-sec-block .to-main-sec-form .to-main-sec-form__signup a {
+        margin-left: 1rem;
+        color: #C4CBD0;
+        text-decoration: none; }
+  .to-main-sec-block .to-main-sec-block__or {
+    color: #6d6b6b;
+    margin: 1.5rem; }
+  .to-main-sec-block .to-main-sec-block-btns {
+    margin: 1.5rem; }
+    .to-main-sec-block .to-main-sec-block-btns .to-main-sec-block-btns__btn {
+      border: none;
+      outline: none;
+      color: #C4CBD0;
+      font-size: x-large;
+      background-color: rgba(63, 62, 62, 0.3);
+      padding: 0.4rem;
+      width: 14rem;
+      margin-right: 1.5rem; }
+    .to-main-sec-block .to-main-sec-block-btns .to-main-sec-block-btns-icon {
+      margin: 0 1rem; }
+
+.footer {
+  border-top: 2px solid #3b3b3b; }
+  .footer .container-fluid ul {
+    padding: 8px;
+    margin: 0 4px; }
+    .footer .container-fluid ul li {
+      list-style-type: none;
+      margin-bottom: 6px; }
+
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 180px;
+  width: 250px; }
+
+#footer-plus-icon, #footer-minus-icon {
+  display: none;
+  font-size: 24px; }
+
+@media (max-width: 520px) {
+  .input-box {
+    width: 16rem; } }
+
+@media (max-width: 767px) {
+  #footer-plus-icon {
+    display: block; }
+  #footer-minus-icon {
+    display: none; }
+  #ul-toggle {
+    display: none; } }
+
+@media (min-width: 768px) {
+  #footer-plus-icon, #footer-minus-icon {
+    display: none; }
+  #ul-toggle {
+    display: block; } }
+
+@media (min-width: 768px) and (max-width: 1048px) {
+  #viewDiv {
+    width: 200px; } }
