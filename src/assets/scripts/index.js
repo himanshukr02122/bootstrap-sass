@@ -27,6 +27,6 @@ $(()=>{
 
     });
     $('#to-main-sec-block__skip').on('click', ()=> {
-      $('#to-main-sec-block').hide();
+      $(window).attr('location','./searchParts.html');
     })
   });

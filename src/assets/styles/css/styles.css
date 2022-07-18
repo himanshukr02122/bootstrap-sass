@@ -12,15 +12,6 @@ body {
   scrollbar-width: none;
   /* Firefox */ }
 
-h1 {
-  color: antiquewhite;
-  cursor: pointer; }
-
-p {
-  background: #000;
-  color: #fff;
-  padding: 4px; }
-
 .to-header-search-input-box, .select-car {
   outline: none; }
 
@@ -52,6 +43,13 @@ option {
 .to-main-section {
   position: relative;
   background: #000 url("../../images/car.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-bottom: 12rem; }
+
+.to-main-section-sec-page {
+  position: relative;
+  background: #000 url("../../images/to-sec-page-car.jpg") no-repeat center;
   background-size: cover;
   min-height: 100vh;
   padding-bottom: 12rem; }

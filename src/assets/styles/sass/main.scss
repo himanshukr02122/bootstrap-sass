@@ -8,6 +8,13 @@ $darker-gray: rgb(63, 62, 62);
     color: $light-gray;
     font-size: $fontSize;
 }
+@mixin main-section($bgURL: '../../images/car.jpg') {
+    position: relative;
+    background:#000 url($bgURL) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 12rem;
+}
 
 html, body {
     margin: 0;
@@ -25,17 +32,6 @@ body::-webkit-scrollbar {
 }
 body {
     @extend %no-scrollbar;
-}
-
-h1 {
-    color: antiquewhite;
-    cursor: pointer;
-    
-}
-p {
-    background: #000;
-    color: #fff;
-    padding: 4px;
 }
 %outline {
     outline: none;
@@ -77,12 +73,10 @@ option {
 
 // main section
 .to-main-section {
-    position: relative;
-    background:#000 url("../../images/car.jpg") no-repeat center;
-    background-size: cover;
-    min-height: 100vh;
-    padding-bottom: 12rem;
-
+    @include main-section;
+}
+.to-main-section-sec-page {
+    @include main-section($bgURL: '../../images/to-sec-page-car.jpg');
 }
 .to-main-sec-block {
     position: relative;
@@ -169,9 +163,6 @@ option {
         }
     }
 }
-
-
-
 // Footer
 .footer {
     border-top: 2px solid rgb(59, 59, 59);
@@ -197,18 +188,12 @@ option {
     display: none;
     font-size: 24px;
 }
-
-
-
-
 //   media queries ***************************************************
-
 @media (max-width:520px) {
     .input-box {
         width: 16rem;
     }   
 }
-
 @media (max-width:767px) {
     #footer-plus-icon {
         display: block;
@@ -228,10 +213,8 @@ option {
         display: block;
     }
 }
-
 @media (min-width:768px) and (max-width:1048px) {
     #viewDiv {
         width: 200px;
-    }
-    
+    }   
 }
