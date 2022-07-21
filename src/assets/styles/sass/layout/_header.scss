@@ -1,0 +1,45 @@
+%outline {
+    outline: none;
+}
+.to-header__search-input {
+    border: none;
+    @extend %outline;
+    font-size:medium;
+    width: 20rem;
+}
+.to-header__select-car {
+    width: 250px;
+    @extend %outline;
+    padding: 4px;
+    margin: 0 2rem 0 0;
+}
+option {
+    background: rgba(0, 0, 0, 0.877);
+}
+
+.to-header__bottom-inner {
+    .to-header__bottom-lists {
+        .to-header__bottom-list {
+            .to-header__bottom-link {
+                border-right: 1px solid gray;
+                padding:0 8px;
+                color: $bs-gray-400;
+            }
+            
+        }
+        .to-header__bottom-link:hover {
+            color: $bs-gray-600;
+        }
+    }
+}
+// Media Queries *******************************************************
+@media (max-width:520px) {
+    .to-header__search {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .to-header__search-input {
+        width: 90%;
+    }
+}

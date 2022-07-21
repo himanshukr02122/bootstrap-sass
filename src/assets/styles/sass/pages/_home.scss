@@ -1,0 +1,22 @@
+.to-block {
+    position: absolute;
+    background: rgba($color: #000000, $alpha: 0.8);
+    padding: 4rem;
+    height: 28rem;
+    top: 5rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    .to-block__h1 {
+        margin: 1.2rem 0;
+    }
+    .to-block__p {
+        color: $bs-gray-500;
+        font-size: 1.5rem;
+    }
+}
+.to-home__imgwrap {
+    @include main-section($bgURL: '../../images/to-sec-page-car.jpg');
+}

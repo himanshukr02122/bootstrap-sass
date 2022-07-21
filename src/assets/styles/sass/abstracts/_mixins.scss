@@ -1,0 +1,13 @@
+@mixin btn-block($fontSize: x-large) {
+    border: none; 
+    outline: none;
+    color: $white;
+    font-size: $fontSize;
+}
+@mixin main-section($bgURL: '../../images/car.jpg') {
+    position: relative;
+    background: $black url($bgURL) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 12rem;
+}

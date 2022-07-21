@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css">
+    <link rel="stylesheet" href="../assets/styles/css/styles.css">
+    <title>Second Page</title>
+</head>
+<body><header class="to-header">
+  <div class="to-header-inner container-fluid d-lg-flex align-items-center justify-content-between py-2 px-lg-5">
+      <div class="to-header__brand d-flex gap-5 align-items-center justify-content-between justify-content-sm-center mb-3 mb-lg-0">
+          <img src="../assets/images/logo/logo.png" alt="logo" width="72" tabindex="1">
+          <div class="to-header__search px-2 py-1 border-bottom border-2">
+              <input type="search" name="main-search" id="main-search" class="to-header__search-input" 
+              placeholder="Search by part name, part number" tabindex="2"
+          >
+          <button class="bg-transparent border-0"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </div>
+      </div>
+      <ul class="to-header__lists list-unstyled d-flex align-items-center justify-content-center gap-3 gap-sm-4 mb-0">
+          <li class="to-header__list d-flex flex-column align-items-center" tabindex="3">
+              <img src="../assets/images/icons/love.png" alt="wishlist-icon" width="25">
+              <span>Wishlist</span>                        
+          </li>
+          <li class="to-header__list d-flex flex-column align-items-center" tabindex="4">
+              <img src="../assets/images/icons/track.png" alt="track-order-icon" width="25" class="to-header-list-item-icon">
+              <span>Track Order</span>                        
+          </li>
+          <li class="to-header__list d-flex flex-column align-items-center" tabindex="5">
+              <img src="../assets/images/icons/shopping-cart.png" alt="shopping-cart-icon" width="25" class="to-header-list-item-icon">
+              <span>My Cart</span>                        
+          </li>
+          <li class="to-header__list d-flex flex-column align-items-center" tabindex="6">
+              <img src="../assets/images/icons/user.png" alt="my-account-icon" width="25" class="to-header-list-item-icon">
+              <span>My Account</span>                        
+          </li>
+          <li class="to-header__list d-flex flex-column align-items-center" tabindex="7">
+              <img src="../assets/images/icons/whatsapp.png" alt="whatsapp-icon" width="25" class="to-header-list-item-icon">
+              <span>Whatsapp</span>                        
+          </li>
+      </ul>
+  </div>
+    <nav class="to-header__bottom navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="to-header__bottom-inner collapse navbar-collapse" id="navbarText">
+        <ul class="to-header__bottom-lists navbar-nav me-auto mb-2 mb-lg-0 py-2">
+          <li class="to-header__bottom-list nav-item">
+            <a class="to-header__bottom-link nav-link" href="#">Book a Service Appointment</a>
+          </li>
+          <li class="to-header__bottom-list nav-item">
+            <a class="to-header__bottom-link nav-link" href="#">Service Cost Calculator</a>
+          </li>
+          <li class="to-header__bottom-list nav-item">
+            <a class="to-header__bottom-link nav-link" href="#">Connect to Service Shop</a>
+          </li>
+          <li class="to-header__bottom-list nav-item">
+            <a class="to-header__bottom-link nav-link" href="#">Find Dealer</a>
+          </li>
+          <li class="to-header__bottom-list nav-item">
+            <a class="to-header__bottom-link nav-link" href="#">About Us</a>
+          </li>
+        </ul>
+          <select name="cars" id="cars" class="to-header__select-car border border-danger bg-transparent text-white-50" tabindex="8">
+            <option value="Select your Car">Select your Car</option>
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Bugati">Bugati</option>  
+          </select>
+      </div>
+    </nav>
+    </header>
+    <main class="to-main bg-black text-white">
+      <div class="to-home__imgwrap">
+        <div class="to-block container-sm col-md-6" >
+          <h1 class="to-block__h1">WELCOME TO TPC</h1>
+          <p class="to-block__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellendus aut itaque, natus ullam explicabo unde cumque eaque impedit possimus est illum fuga sequi incidunt omnis commodi animi, culpa non doloribus! Odit nisi perspiciatis porro rem, sequi quisquam ipsum minus?</p>
+        </div>
+      </div> 
+    </main>
+    <footer class="footer">
+        <div class="container-fluid bg-black text-white p-4">
+            <div class="row row-cols-1 row-cols-md-4">
+              <div class="col">
+                 <div class="d-flex align-items-center justify-content-between">
+                   <h3>Parts Catelog</h3> 
+                   <i class="fa fa-plus-square" id="footer-plus-icon" aria-hidden="true"></i>
+                   <i class="fa fa-minus-square" id="footer-minus-icon" aria-hidden="true"></i>
+                  </div>
+                 <ul id="ul-toggle">
+                     <li>Engine & Transmission</li>
+                     <li>Brake & Suspension</li>
+                     <li>Lubricants</li>
+                     <li>Accessories</li>
+                     <li>Miscellaneous</li>
+                 </ul>
+              </div>
+              <div class="col">
+                 <h3>More Results</h3>
+                 <ul>
+                     <li>Sign Up</li>
+                     <li>About Us</li>
+                     <li>Track Order</li>
+                     <li>Request Return</li>
+                     <li>FAQ'S</li>
+                 </ul>
+              </div>
+              <div class="col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="mainto:voc@toyota-kirloskar.co.in">voc@toyota-kirloskar.co.in</a>
+                    <br><a href="tel:18004250001">18004250001</a></li>
+                    <li><a href="#">Fill in the Form</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                  <h3>Find Part Distributor</h3>
+                  <!-- <iframe src=”https://www.google.com/maps/embed?pb=!…” width=”600″ height=”450″ frameborder=”0″ allowfullscreen></iframe> -->
+                  <!-- <iframe src="" frameborder="0" width="250" id="viewDiv"></iframe> -->
+                    <div id="viewDiv">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/scripts/index.js"></script>
+    <script src="https://js.arcgis.com/4.24/"></script>
+    <script src="../assets/scripts/gis.js"></script>
+
+</body>
+</html>

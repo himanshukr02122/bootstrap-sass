@@ -27,6 +27,8 @@ $(()=>{
 
     });
     $('#to-main-sec-block__skip').on('click', ()=> {
-      $(window).attr('location','./searchParts.html');
+      $(window).attr('location','./home.html');
     })
   });
+let to_link= document.getElementsByClassName('to-header__bottom-link');
+to_link[4].style='border-right: 0px';

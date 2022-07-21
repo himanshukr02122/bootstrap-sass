@@ -15,98 +15,100 @@
 </head>
 <body>
     <header class="to-header">
-        <div class="to-header-block container-fluid d-lg-flex align-items-center justify-content-between py-2 px-lg-5">
-            <div class="to-header-logo-search-block d-flex gap-5 align-items-center justify-content-between justify-content-sm-center mb-3 mb-lg-0">
-                <img src="../assets/images/logo/logo.png" alt="logo" width="72" class="to-header-logo">
-                <div class="header-search px-2 py-1 border-bottom border-2">
-                    <input type="search" name="main-search" id="main-search" class="to-header-search-input-box" 
-                    placeholder="Search by part name, part number"
+        <div class="to-header-inner container-fluid d-lg-flex align-items-center justify-content-between py-2 px-lg-5">
+            <div class="to-header__brand d-flex gap-5 align-items-center justify-content-between justify-content-sm-center mb-3 mb-lg-0">
+                <img src="../assets/images/logo/logo.png" alt="logo" width="72" tabindex="1">
+                <div class="to-header__search px-2 py-1 border-bottom border-2">
+                    <input type="search" name="main-search" id="main-search" class="to-header__search-input" 
+                    placeholder="Search by part name, part number" tabindex="2"
                 >
-                <i class="to-header-search-icon fa fa-search" aria-hidden="true"></i>
+                <button class="bg-transparent border-0"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </div>
             </div>
-            <ul class="to-header-list list-unstyled d-flex align-items-center justify-content-center gap-3 gap-sm-4 mb-0">
-                <li class="to-header-list-item d-flex flex-column align-items-center">
-                    <img src="../assets/images/icons/love.png" alt="wishlist-icon" width="25" class="to-header-list-item-icon">
-                    <span class="to-header-list-item-title">Wishlist</span>                        
+            <ul class="to-header__lists list-unstyled d-flex align-items-center justify-content-center gap-3 gap-sm-4 mb-0">
+                <li class="to-header__list d-flex flex-column align-items-center" tabindex="3">
+                    <img src="../assets/images/icons/love.png" alt="wishlist-icon" width="25">
+                    <span>Wishlist</span>                        
                 </li>
-                <li class="to-header-list-item d-flex flex-column align-items-center">
+                <li class="to-header__list d-flex flex-column align-items-center" tabindex="4">
                     <img src="../assets/images/icons/track.png" alt="track-order-icon" width="25" class="to-header-list-item-icon">
-                    <span class="to-header-list-item-title">Track Order</span>                        
+                    <span>Track Order</span>                        
                 </li>
-                <li class="to-header-list-item d-flex flex-column align-items-center">
+                <li class="to-header__list d-flex flex-column align-items-center" tabindex="5">
                     <img src="../assets/images/icons/shopping-cart.png" alt="shopping-cart-icon" width="25" class="to-header-list-item-icon">
-                    <span class="to-header-list-item-title">My Cart</span>                        
+                    <span>My Cart</span>                        
                 </li>
-                <li class="to-header-list-item d-flex flex-column align-items-center">
+                <li class="to-header__list d-flex flex-column align-items-center" tabindex="6">
                     <img src="../assets/images/icons/user.png" alt="my-account-icon" width="25" class="to-header-list-item-icon">
-                    <span class="to-header-list-item-title">My Account</span>                        
+                    <span>My Account</span>                        
                 </li>
-                <li class="to-header-list-item d-flex flex-column align-items-center">
+                <li class="to-header__list d-flex flex-column align-items-center" tabindex="7">
                     <img src="../assets/images/icons/whatsapp.png" alt="whatsapp-icon" width="25" class="to-header-list-item-icon">
-                    <span class="to-header-list-item-title">Whatsapp</span>                        
+                    <span>Whatsapp</span>                        
                 </li>
             </ul>
         </div>
-        <nav class="to-navbar container-fluid navbar navbar-expand-lg navbar-dark bg-dark px-lg-5">
-          <button class="to-navbar__burger-button navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="to-navbar__burger-icon navbar-toggler-icon
-            "></span>
+      <nav class="to-header__bottom navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="to-navbar-list-block collapse navbar-collapse" id="navbarText">
-            <ul class="to-navbar-list-block-ul navbar-nav me-auto mb-2 mb-lg-0 py-2">
-              <li class="to-navbar-list-block__item nav-item">
-                <a class="to-navbar-list-block__item-link nav-link" href="#">Book a Service Appointment</a>
-              </li>
-              <li class="to-navbar-list-block__item nav-item">
-                <a class="to-navbar-list-block__item-link nav-link" href="#">Service Cost Calculator</a>
-              </li>
-              <li class="to-navbar-list-block__item nav-item">
-                <a class="to-navbar-list-block__item-link nav-link" href="#">Connect to Service Shop</a>
-              </li>
-              <li class="to-navbar-list-block__item nav-item">
-                <a class="to-navbar-list-block__item-link nav-link" href="#">Find Dealer</a>
-              </li>
-              <li class="to-navbar-list-block__item nav-item">
-                <a class="to-navbar-list-block__item-link nav-link" href="#">About Us</a>
-              </li>
-            </ul>
-              <select name="cars" id="cars" class="to-navbar-list-block-select select-car border border-danger bg-transparent text-white-50">
-                <option value="Select your Car">Select your Car</option>
-                <option value="Audi">Audi</option>
-                <option value="Audi">BMW</option>
-                <option value="Audi">Mercedes</option>
-                <option value="Audi">Bugati</option>  
-              </select>
-          </div>
-        </nav>
+        <div class="to-header__bottom-inner collapse navbar-collapse" id="navbarText">
+          <ul class="to-header__bottom-lists navbar-nav me-auto mb-2 mb-lg-0 py-2">
+            <li class="to-header__bottom-list nav-item">
+              <a class="to-header__bottom-link nav-link" href="#">Book a Service Appointment</a>
+            </li>
+            <li class="to-header__bottom-list nav-item">
+              <a class="to-header__bottom-link nav-link" href="#">Service Cost Calculator</a>
+            </li>
+            <li class="to-header__bottom-list nav-item">
+              <a class="to-header__bottom-link nav-link" href="#">Connect to Service Shop</a>
+            </li>
+            <li class="to-header__bottom-list nav-item">
+              <a class="to-header__bottom-link nav-link" href="#">Find Dealer</a>
+            </li>
+            <li class="to-header__bottom-list nav-item">
+              <a class="to-header__bottom-link nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+            <select name="cars" id="cars" class="to-header__select-car border border-danger bg-transparent text-white-50" tabindex="8">
+              <option value="Select your Car">Select your Car</option>
+              <option value="Audi">Audi</option>
+              <option value="BMW">BMW</option>
+              <option value="Mercedes">Mercedes</option>
+              <option value="Bugati">Bugati</option>  
+            </select>
+        </div>
+      </nav>
     </header>
-    <main class="to-main-section bg-black text-white">
-        <div class="to-main-sec-block" id="to-main-sec-block">
-          <button class="to-main-sec-block__skip" id="to-main-sec-block__skip">SKIP 
+    <main class="to-main bg-black text-white">
+      <div class="to-main__imgwrap">
+        <div class="to-main__form-block" id="to-main-sec-block">
+          <button class="to-main__skip" id="to-main-sec-block__skip">SKIP 
             <i class="fa fa-angle-right" aria-hidden="true"></i>
           </button>
-          <h2 class="to-main__h2">Welcome to Toyota Genuine Parts<span class="to-main__h2-dot"></span></h2>
+          <h2 class="to-main__h2">Welcome to Toyota Genuine Parts<span class="to-main__dot"></span></h2>
           <form class="to-main-sec-form">
             <input type="text" name="email-mob" class="to-main-sec-form__input"
              id="email-mob" placeholder="Enter Email/ Mobile Number*">
             <input type="Password" name="password" class="to-main-sec-form__input" 
              id="password" placeholder="Enter Password*">
             
-            <a href="#" class="to-main-sec-form__Forgot-Pwd">Forgot Password?</a>
-            <button class="to-main-sec-form__button rounded">Login</button>
-            <div class="to-main-sec-form__signup">Don't have an account yet?<a href="#">Sign Up</a></div> 
+            <a href="#" class="to-Forgot-Pwd__link">Forgot Password?</a>
+            <button class="to-btn__bgred rounded">Login</button>
+            <div class="to-form__signup">Don't have an account yet?<a href="#">Sign Up</a></div> 
           </form>
-          <div class="to-main-sec-block__or">OR</div>
-          <div class="to-main-sec-block-btns">
-            <button class="to-main-sec-block-btns__btn">
-              <i class="to-main-sec-block-btns-icon fa-brands fa-facebook-square" aria-hidden="true"></i>Facebook
+          <div class="to-main__or">OR</div>
+          <div class="to-main__btn-group">
+            <button class="to-btn__bg-dark">
+              <i class="fa-brands fa-facebook-square mx-2" aria-hidden="true"></i>Facebook
             </button>
-            <button class="to-main-sec-block-btns__btn">
-              <i class="to-main-sec-block-btns-icon fa-brands fa-google" aria-hidden="true"></i>Google
+            <button class="to-btn__bg-dark">
+              <i class="fa-brands fa-google mx-2" aria-hidden="true"></i>Google
             </button>
           </div>
         </div>
+      </div>
     </main> 
     
     <footer class="footer">
