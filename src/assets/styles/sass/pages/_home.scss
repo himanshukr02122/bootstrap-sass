@@ -1,27 +1,11 @@
-%showroom-block {
-    position: absolute;
-    padding: 2rem;
-    height: 24rem;
-    width: 45%;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    top: 4rem;
-    color: $white;
-    z-index: 5;
-}
-%showroom-imgWrap {
-    position: relative;
-    width: 58%;
-    height: 29rem;
-    z-index: 0;
-}
+
 .to-block {
-    position: absolute;
+    position: relative;
     background: rgba($color: #000000, $alpha: 0.8);
     padding: 4rem;
     height: 28rem;
     top: 5rem;
-    right: 0;
+    float: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,6 +19,21 @@
         font-size: 1.5rem;
     }
 }
+%showroom-block {
+    padding: 2rem;
+    height: 24rem;
+    width: 45%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    top: 2.5rem;
+    color: $white;
+    z-index: 5;
+}
+%showroom-imgWrap {
+    width: 58%;
+    height: 29rem;
+    z-index: 0;
+}
 .to-home__imgwrap {
     @include main-section($bgURL: '../../images/to-sec-page-car.jpg');
 }
@@ -42,6 +41,16 @@
     position: relative;
     .to-showroom__imgwrap {
         @extend %showroom-imgWrap;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .to-showroom__imgwrap1 {
+        @extend %showroom-imgWrap;
+        position: absolute;
+        right: 0;
         img {
             width: 100%;
             height: 100%;
@@ -49,6 +58,7 @@
     }
     .to-showroom__block1 {
         @extend %showroom-block;
+        position: absolute;
         box-shadow: 2px 2px 2px red;
         right: 0;
         h3 {
@@ -64,6 +74,7 @@
     }
     .to-showroom__block2 {
         @extend %showroom-block;
+        position: relative;
         left: 0;
         box-shadow: 2px -2px 2px inset red;
         h3 {
@@ -75,14 +86,6 @@
         }
         p {
         color: $bs-gray-600;
-        }
-    }
-    .to-showroom__imgwrap1 {
-        @extend %showroom-imgWrap;
-        margin-left: 45%;
-        img {
-            width: 100%;
-            height: 100%;
         }
     }
 }
