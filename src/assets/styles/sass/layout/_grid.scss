@@ -1,0 +1,32 @@
+@import '../abstracts/variables';
+.to-grid {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 3rem 0;
+    .to-grid__heading {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        .to-grid__title {
+            position: relative;
+            width: fit-content;
+            background-color: $white;
+            padding-right: 1rem;
+            z-index: 2;
+        }
+        hr {
+            width: 100%;
+            border-bottom: 2px solid $red;
+            position: absolute;
+            bottom: 0;
+            z-index: 0;
+        }       
+    }
+    .to-grid__figcaption1 {
+        @include figcaption-style;
+    }
+    .to-grid__figcaption2 {
+        @include figcaption-style($border-b: $bs-gray-500);
+    }
+}

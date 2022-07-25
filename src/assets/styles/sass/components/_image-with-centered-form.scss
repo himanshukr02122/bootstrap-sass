@@ -1,9 +1,6 @@
-@import '../abstracts/variables';
-
 .to-main__imgwrap {
     @include main-section;
 }
-
 .to-main__form-block {
     position: relative;
     background-color: rgba($color: #000000, $alpha: 0.6);
@@ -29,15 +26,12 @@
         align-items: baseline;
         color: $bs-gray-400;
         .to-main__dot {
-            background-color: red;
-            padding: 3px;
-            margin: 4px;
-            bottom: 4px;    
+            @include dot;    
         }
     }
-    .to-main-sec-form {
+    .to-main__form {
         margin: 0.2rem 1.5rem;
-        .to-main-sec-form__input {
+        .to-main__form-input {
             width: 100%;
             @include btn-block($fontSize: medium);
             background-color: transparent; 
@@ -45,7 +39,7 @@
             margin-bottom: 1.2rem; 
                
         }
-        .to-main-sec-form__input::placeholder {
+        .to-main__form-input::placeholder {
             color: $bs-gray-700;
         }
         .to-Forgot-Pwd__link {

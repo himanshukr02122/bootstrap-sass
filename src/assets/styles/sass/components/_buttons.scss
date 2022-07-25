@@ -1,18 +1,20 @@
 // @import '../../../../../node_modules/bootstrap/scss/variables'
 .to-btn__bgred {
-    padding: 0.4rem;
-    min-width: 16rem;
-    background-color:rgba($color: #ff0000, $alpha: 0.8);
-    @include btn-block;
+    @include btn-block($width: 16rem);
+}
+.to-grid__btn {
+    @include btn-block($width: 16rem);
+}
+.to-showroom__btn {
+    @include btn-block($width: 20rem);
 }
 
 .to-main__btn-group {
     margin: 1.5rem;
     .to-btn__bg-dark {
-        @include btn-block;
+        @include btn-block($width: 14rem);
         background-color: rgba($color: $bs-gray-700, $alpha: 0.3);
         padding: 0.4rem;
-        width: 14rem;
         margin-right: 1.5rem;
     }
 }

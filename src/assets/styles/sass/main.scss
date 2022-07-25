@@ -7,6 +7,7 @@
 @import './components/image-with-centered-form';
 
 @import './layout/footer';
+@import './layout/grid';
 @import './layout/header';
 
 @import './pages/home';
@@ -31,34 +32,4 @@ body::-webkit-scrollbar {
 }
 body {
     @extend %no-scrollbar;
-}
-
-// main section
-
-// Second Page goes here...................
-
-//   media queries ***************************************************
-@media (max-width:767px) {
-    #footer-plus-icon {
-        display: block;
-    }
-    #footer-minus-icon {
-        display: none;
-    }
-    #ul-toggle {
-        display: none;
-    }
-}
-@media (min-width:768px) {
-    #footer-plus-icon, #footer-minus-icon {
-        display: none;
-    }
-    #ul-toggle {
-        display: block;
-    }
-}
-@media (min-width:768px) and (max-width:1048px) {
-    #viewDiv {
-        width: 200px;
-    }   
 }

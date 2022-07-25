@@ -1,13 +1,30 @@
-@mixin btn-block($fontSize: x-large) {
+@mixin btn-block($fontSize: x-large, $width: 16rem) {
     border: none; 
     outline: none;
     color: $white;
+    width: $width;
     font-size: $fontSize;
+    padding: 0.4rem;
+    background-color:rgba($color: #ff0000, $alpha: 0.8);
+}
+@mixin figcaption-style($border-b: $bs-gray-600) {
+        padding: 2px 0;
+        text-align: start;
+        font-size: 1.6rem;
+        width: 75%;
+        border-bottom: 2px solid $border-b;
+        font-weight: 500;    
 }
 @mixin main-section($bgURL: '../../images/car.jpg') {
     position: relative;
-    background: $black url($bgURL) no-repeat center;
+    background: url($bgURL) no-repeat center;
     background-size: cover;
     min-height: 100vh;
     padding-bottom: 12rem;
+}
+@mixin dot($padding: 3px) {
+    background-color: red;
+    padding: $padding;
+    margin: 4px;
+    bottom: 4px;
 }

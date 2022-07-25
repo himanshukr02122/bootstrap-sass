@@ -23,3 +23,29 @@
     display: none;
     font-size: 24px;
 }
+
+//   media queries ***************************************************
+@media (max-width:767px) {
+    #footer-plus-icon {
+        display: block;
+    }
+    #footer-minus-icon {
+        display: none;
+    }
+    #ul-toggle {
+        display: none;
+    }
+}
+@media (min-width:768px) {
+    #footer-plus-icon, #footer-minus-icon {
+        display: none;
+    }
+    #ul-toggle {
+        display: block;
+    }
+}
+@media (min-width:768px) and (max-width:1048px) {
+    #viewDiv {
+        width: 200px;
+    }   
+}
