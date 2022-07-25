@@ -41,15 +41,15 @@
 
 .to-main__imgwrap {
   position: relative;
-  background: url("../../images/car.jpg") no-repeat center;
-  background-size: cover;
-  min-height: 100vh;
+  background: #000 url("../../images/car.jpg") no-repeat center;
+  background-size: contain;
+  min-height: auto;
+  width: 100%;
   padding-bottom: 12rem; }
 
 .to-main__form-block {
   position: relative;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 40rem;
   border: 1px solid #495057;
   margin: auto;
   top: 40px;
@@ -64,9 +64,9 @@
     border: none; }
   .to-main__form-block .to-main__h2 {
     position: relative;
-    margin: 4rem auto 3rem;
+    margin: 4rem 0 3rem 1.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: baseline;
     color: #ced4da; }
     .to-main__form-block .to-main__h2 .to-main__dot {
@@ -110,12 +110,19 @@
 
 .footer {
   border-top: 2px solid #3b3b3b; }
+  .footer .container-fluid h3 {
+    margin-bottom: 1rem; }
   .footer .container-fluid ul {
     padding: 8px;
     margin: 0 4px; }
     .footer .container-fluid ul li {
       list-style-type: none;
-      margin-bottom: 6px; }
+      margin-bottom: 0.8rem; }
+      .footer .container-fluid ul li a {
+        text-decoration: none;
+        color: #ced4da; }
+      .footer .container-fluid ul li a:hover {
+        color: #6c757d; }
 
 #viewDiv {
   padding: 0;
@@ -123,27 +130,27 @@
   height: 180px;
   width: 250px; }
 
-#footer-plus-icon, #footer-minus-icon {
+#footer-plus-icon, #footer-minus-icon, #footer-plus-icon1, #footer-minus-icon1, #footer-plus-icon2, #footer-minus-icon2 {
   display: none;
   font-size: 24px; }
 
 @media (max-width: 767px) {
-  #footer-plus-icon {
+  #footer-plus-icon, #footer-plus-icon1, #footer-plus-icon2 {
     display: block; }
-  #footer-minus-icon {
+  #footer-minus-icon, #footer-minus-icon1, #footer-minus-icon2 {
     display: none; }
-  #ul-toggle {
+  #ul-toggle, #ul-toggle1, #ul-toggle2 {
     display: none; } }
 
 @media (min-width: 768px) {
-  #footer-plus-icon, #footer-minus-icon {
+  #footer-plus-icon, #footer-minus-icon, #footer-plus-icon1, #footer-minus-icon1, #footer-plus-icon2, #footer-minus-icon2 {
     display: none; }
-  #ul-toggle {
+  #ul-toggle, #ul-toggle1, #ul-toggle2 {
     display: block; } }
 
 @media (min-width: 768px) and (max-width: 1048px) {
   #viewDiv {
-    width: 200px; } }
+    width: 190px; } }
 
 .to-grid {
   position: relative;
@@ -247,13 +254,15 @@ option {
 
 .to-home__imgwrap {
   position: relative;
-  background: url("../../images/to-sec-page-car.jpg") no-repeat center;
+  background: #fff url("../../images/to-sec-page-car.jpg") no-repeat center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 100vmin;
+  width: 100%;
   padding-bottom: 12rem; }
 
 .to-showroom {
-  position: relative; }
+  position: relative;
+  padding-bottom: 2rem; }
   .to-showroom .to-showroom__imgwrap {
     position: relative; }
     .to-showroom .to-showroom__imgwrap img {

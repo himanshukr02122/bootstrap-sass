@@ -4,7 +4,6 @@
 .to-main__form-block {
     position: relative;
     background-color: rgba($color: #000000, $alpha: 0.6);
-    width: 40rem;
     border: 1px solid $bs-gray-700;
     margin: auto;
     top: 40px;
@@ -20,9 +19,9 @@
     }
     .to-main__h2 {
         position: relative;
-        margin: 4rem auto 3rem;
+        margin: 4rem 0 3rem 1.5rem;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: baseline;
         color: $bs-gray-400;
         .to-main__dot {

@@ -35,10 +35,11 @@
     z-index: 0;
 }
 .to-home__imgwrap {
-    @include main-section($bgURL: '../../images/to-sec-page-car.jpg');
+    @include main-section($bgURL: '../../images/to-sec-page-car.jpg', $bgSize: cover, $bgColor: #fff, $height: 100vmin);
 }
 .to-showroom {
     position: relative;
+    padding-bottom: 2rem;
     .to-showroom__imgwrap {
         @extend %showroom-imgWrap;
         position: relative;

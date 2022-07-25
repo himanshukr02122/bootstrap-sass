@@ -2,12 +2,22 @@
 .footer {
     border-top: 2px solid rgb(59, 59, 59);
     .container-fluid {
+        h3 {
+            margin-bottom: 1rem;
+        }
         ul {
             padding: 8px;
             margin: 0 4px;
             li {
                 list-style-type: none;
-                margin-bottom: 6px;
+                margin-bottom: 0.8rem;
+                a {
+                    text-decoration: none;
+                    color: $bs-gray-400;
+                }
+                a:hover {
+                    color: $bs-gray-600;
+                }
             }
         }
     } 
@@ -19,33 +29,33 @@
     width: 250px;
   }
 
-#footer-plus-icon, #footer-minus-icon {
+#footer-plus-icon, #footer-minus-icon, #footer-plus-icon1, #footer-minus-icon1, #footer-plus-icon2, #footer-minus-icon2 {
     display: none;
     font-size: 24px;
 }
 
 //   media queries ***************************************************
 @media (max-width:767px) {
-    #footer-plus-icon {
+    #footer-plus-icon, #footer-plus-icon1, #footer-plus-icon2 {
         display: block;
     }
-    #footer-minus-icon {
+    #footer-minus-icon, #footer-minus-icon1, #footer-minus-icon2 {
         display: none;
     }
-    #ul-toggle {
+    #ul-toggle, #ul-toggle1, #ul-toggle2 {
         display: none;
     }
 }
 @media (min-width:768px) {
-    #footer-plus-icon, #footer-minus-icon {
+    #footer-plus-icon, #footer-minus-icon, #footer-plus-icon1, #footer-minus-icon1, #footer-plus-icon2, #footer-minus-icon2 {
         display: none;
     }
-    #ul-toggle {
+    #ul-toggle, #ul-toggle1, #ul-toggle2 {
         display: block;
     }
 }
 @media (min-width:768px) and (max-width:1048px) {
     #viewDiv {
-        width: 200px;
+        width: 190px;
     }   
 }
