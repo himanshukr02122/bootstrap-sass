@@ -188,10 +188,16 @@
     border-bottom: 2px solid #adb5bd;
     font-weight: 500; }
 
-.to-header__search-input, .to-header__select-car {
+.to-header__search .to-header__search-input, .to-header__select-car {
   outline: none; }
 
-.to-header__search-input {
+@media (max-width: breakpoint-max(sm, 520px)) {
+  .to-header__search {
+    width: 60%;
+    display: flex;
+    justify-content: space-between; } }
+
+.to-header__search .to-header__search-input {
   border: none;
   font-size: medium;
   width: 20rem; }
@@ -211,14 +217,6 @@ option {
 
 .to-header__bottom-inner .to-header__bottom-lists .to-header__bottom-link:hover {
   color: #6c757d; }
-
-@media (max-width: 520px) {
-  .to-header__search {
-    width: 60%;
-    display: flex;
-    justify-content: space-between; }
-  .to-header__search-input {
-    width: 90%; } }
 
 .to-block {
   position: relative;
@@ -324,3 +322,5 @@ body {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */ }
+
+@use '../../../../node_modules/bootstrap/scss/bootstrap.scss';

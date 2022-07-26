@@ -1,11 +1,19 @@
 %outline {
     outline: none;
 }
-.to-header__search-input {
-    border: none;
-    @extend %outline;
-    font-size:medium;
-    width: 20rem;
+.to-header__search {
+    @include media-breakpoint-down(sm, 520px) {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;   
+    }
+    .to-header__search-input {
+        border: none;
+        @extend %outline;
+        font-size:medium;
+        width: 20rem;
+        // width: 90%;
+    }
 }
 .to-header__select-car {
     width: 250px;
@@ -34,12 +42,6 @@ option {
 }
 // Media Queries *******************************************************
 @media (max-width:520px) {
-    .to-header__search {
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .to-header__search-input {
-        width: 90%;
-    }
+    
+    
 }
