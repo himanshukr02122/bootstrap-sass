@@ -303,6 +303,14 @@ option {
     .to-showroom .to-showroom__block2 p {
       color: #6c757d; }
 
+.to-product-catelog__imgwrap {
+  position: relative;
+  background: #fff url("../../images/blake-meyer-CRNbHjNaljo-unsplash.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 100vmin;
+  width: 100%;
+  padding-bottom: 12rem; }
+
 html, body {
   margin: 0; }
 
